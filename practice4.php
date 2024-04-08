@@ -7,7 +7,7 @@
 <body>
 
     <form method=get>
-      Size of the multiplicationtable: <input type=text name=size><br>
+      Size of the multiplication table: <input type=text name=size><br>
       <input type=submit value="Submit">
     </form>
     <table border="5">
