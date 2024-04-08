@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <h1>EECS 348 Lab 07 Practice 2</h1>
+</head>
+
+
+<style>
+    #paragraph {
+        border-style: solid;
+    }
+</style>
+
+<body>
+    <div id="paragraph">
+
+
+        <p>This is a paragraph with some dummy text. It is here to test the CSS font control for this lab assignment. JavaScript is also used to make the page more interactive.</p>
+        <p>I am just putting in text to make it feel like a paragraph. I think that this should be enough text for now.</p>
+
+    </div>
+
+    <script>
+    function FontControl() {
+        var borderR = document.getElementById("borderR").value;
+        var borderG = document.getElementById("borderG").value;
+        var borderB = document.getElementById("borderB").value;
+        var borderWidth = document.getElementById("borderWidth").value;
+        var backgroundR = document.getElementById("backgroundR").value;
+        var backgroundG = document.getElementById("backgroundG").value;
+        var backgroundG = document.getElementById("backgroundB").value;
+
+        var tag = document.getElementById("paragraph");
+        tag.style.borderColor = `rgb(${borderR},${borderG},${borderB})`;
+        tag.style.borderWidth = borderWidth
+        tag.style.backgroundColor = `rgb(${backgroundR},${backgroundG},${backgroundG})`;
+    }
+    </script>
+    Border R(0-255): <input type="text" id="borderR" value=""> <br>
+    Border G(0-255): <input type="text" id="borderG" value=""> <br>
+    Border B(0-255): <input type="text" id="borderB" value=""> <br>
+    Border Width: <input type="text" id="borderWidth" value=""> <br>
+    Background R(0-255): <input type="text" id="backgroundR" value=""> <br>
+    Background G(0-255): <input type="text" id="backgroundG" value=""> <br>
+    Background B(0-255): <input type="text" id="backgroundB" value=""> <br>
+    <button onclick="FontControl()">Apply changes</button> <br>
+</body>
+
+</html>
